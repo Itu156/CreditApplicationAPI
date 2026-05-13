@@ -1,7 +1,7 @@
 package za.ac.cput.creditapi.domain;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

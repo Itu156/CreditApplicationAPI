@@ -42,6 +42,38 @@ public class CreditDecision {
         this.decisionDate = LocalDateTime.now();
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getDecisionStatus() {
+        return decisionStatus;
+    }
+
+    public BigDecimal getApprovedAmount() {
+        return approvedAmount;
+    }
+
+    public BigDecimal getInterestRate() {
+        return interestRate;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public String getRiskLevel() {
+        return riskLevel;
+    }
+
+    public LocalDateTime getDecisionDate() {
+        return decisionDate;
+    }
+
+    public CreditApplication getCreditApplication() {
+        return creditApplication;
+    }
+
     // Generate getters only for now
 
     public static class Builder {
@@ -78,24 +110,7 @@ public class CreditDecision {
             this.reason = reason;
             return this;
         }
-
-        public Builder setRiskLevel(String riskLevel) {
-            this.riskLevel = riskLevel;
-            return this;
-        }
-
-        public Builder setDecisionDate(LocalDateTime decisionDate) {
-            this.decisionDate = decisionDate;
-            return this;
-        }
-
-        public Builder setCreditApplication(CreditApplication creditApplication) {
-            this.creditApplication = creditApplication;
-            return this;
-        }
-
-        public CreditDecision build() {
-            return new CreditDecision(this);
-        }
     }
 }
+
+ 
